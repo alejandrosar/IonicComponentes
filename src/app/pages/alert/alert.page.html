@@ -1,0 +1,35 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button text="Volver" defaultHref="/inicio"></ion-back-button>
+    </ion-buttons>
+    <ion-title>alert</ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+<app-header title="{{titulo}}"></app-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-button (click)="presentAlert()">
+        Simple Alert        
+      </ion-button>
+    </ion-item>
+    <ion-item>
+      <ion-button (click)="presentAlertMultipleButtons()">
+        Multiple Buttons
+      </ion-button>
+    </ion-item>
+    <ion-item>
+      <ion-button (click)="presentAlertConfirm()">
+        Alert Confirm
+      </ion-button>
+    </ion-item>
+    <ion-item>
+      <ion-button (click)="presentAlertPrompt()">
+        Input
+      </ion-button>
+    </ion-item>
+  </ion-list>
+</ion-content>

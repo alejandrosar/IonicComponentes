@@ -1,0 +1,27 @@
+<app-header title="{{titulo}}"></app-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let a of avatares">
+      <ion-avatar>
+        <img src="{{a.src}}">
+      </ion-avatar>
+    </ion-item>
+  </ion-list>
+
+  <ion-chip>
+    <ion-avatar>
+      <img src={{avatares[0].src}}>
+    </ion-avatar>
+    <ion-label>{{avatares[0].name}}</ion-label>
+  </ion-chip>
+
+  <ion-item (click)="llamarAlert(avatares[0].name)">
+    <ion-avatar slot={{avatares[0].slot}} >
+      <img src="{{avatares[0].src}}">
+    </ion-avatar>
+    <ion-label>{{avatares[0]?.name}}</ion-label>
+  </ion-item>
+
+
+</ion-content>
